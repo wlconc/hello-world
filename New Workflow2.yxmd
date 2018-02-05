@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="78" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:Test|||"OLTP_TechAssess"."Person"."Person"</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Test
+Table="OLTP_TechAssess"."Person"."Person"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BusinessEntityID" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="Int32" />
+            <Field name="PersonType" size="2" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="WString" />
+            <Field name="NameStyle" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="Bool" />
+            <Field name="Title" size="8" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="V_WString" />
+            <Field name="FirstName" size="50" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="V_WString" />
+            <Field name="MiddleName" size="50" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="V_WString" />
+            <Field name="LastName" size="50" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="V_WString" />
+            <Field name="Suffix" size="10" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="V_WString" />
+            <Field name="EmailPromotion" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="Int32" />
+            <Field name="AdditionalContactInfo" size="16777216" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="V_String" />
+            <Field name="Demographics" size="16777216" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="V_String" />
+            <Field name="rowguid" size="36" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="V_String" />
+            <Field name="ModifiedDate" source="File: aka:Test|||&quot;OLTP_TechAssess&quot;.&quot;Person&quot;.&quot;Person&quot;" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="210" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>New Workflow2</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
